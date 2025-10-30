@@ -1,6 +1,7 @@
 import express from "express";
 const app = express();
 const port = 6969;
+// Middleware
 app.use(express.json());
 
 const users = [{ name: "Abdallah" }];
@@ -15,7 +16,6 @@ app.get("/api/users", (req, res) => {
   res.send(`<body><p>${JSON.stringify(users)} </p></body>`);
 });
 app.post("/api/data", (req, res) => {
-  console.log(req.body);
   users.push(req.body);
   res.status(201);
   res.end();
