@@ -4,7 +4,7 @@
   "description": "Null",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch ./chapter_2/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AbdallahKhaledAhmed/Backend-Full-Course/issues"
   },
-  "homepage": "https://github.com/AbdallahKhaledAhmed/Backend-Full-Course#readme"
+  "homepage": "https://github.com/AbdallahKhaledAhmed/Backend-Full-Course#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }

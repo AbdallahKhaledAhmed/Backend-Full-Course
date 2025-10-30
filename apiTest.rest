@@ -1,0 +1,8 @@
+GET  http://localhost:6969/api/users
+###
+POST http://localhost:6969/api/data
+Content-Type: application/json
+
+{
+    "name":"Abdul"
+}
