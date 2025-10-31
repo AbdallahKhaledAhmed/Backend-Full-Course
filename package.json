@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Null",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch --env-file=./chapter_3/.env ./chapter_3/src/server.js"
   },
