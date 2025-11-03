@@ -58,7 +58,7 @@
     let selectedTab = "All";
     let todos = [];
 
-    const apiBase = "http://localhost:6969/";
+    const apiBase = "/";
 
     // elements
     const nav = document.querySelector("nav");
@@ -190,17 +190,17 @@
       const passVal = password.value;
 
       // guard clauses... if authenticating, return
-      if (
-        isLoading ||
-        isAuthenticating ||
-        !emailVal ||
-        !passVal ||
-        passVal.length < 6 ||
-        !emailVal.includes("@")
-      ) {
-        console.log("Please Enter a valid E-mail");
-        return;
-      }
+      // if (
+      //   isLoading ||
+      //   isAuthenticating ||
+      //   !emailVal ||
+      //   !passVal ||
+      //   passVal.length < 6 ||
+      //   !emailVal.includes("@")
+      // ) {
+      //   console.log("Please Enter a valid E-mail");
+      //   return;
+      // }
 
       // reset error and set isAuthenticating to true
       error.style.display = "none";

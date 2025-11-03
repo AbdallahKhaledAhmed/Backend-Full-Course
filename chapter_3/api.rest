@@ -1,3 +1,7 @@
+GET http://localhost:6969/
+
+###
+
 POST http://localhost:6969/auth/register
 Content-Type: application/json
 
@@ -5,3 +9,30 @@ Content-Type: application/json
     "username":"Hello World",
     "password": "Abdallah"
 }
+
+### 
+
+POST http://localhost:6969/auth/login
+Content-Type: application/json
+
+{
+    "username":"Hello World",
+    "password": "Abdallah"
+}
+
+### 
+
+GET http://localhost:6969/todos/
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYyMTkyMzgzLCJleHAiOjE3NjIyNzg3ODN9.bBD_YAHxGQz9SK_dgyCtMZrTOzlfSyhlEhvajX218sw
+
+### 
+
+POST http://localhost:6969/todos/
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYyMTkyMzgzLCJleHAiOjE3NjIyNzg3ODN9.bBD_YAHxGQz9SK_dgyCtMZrTOzlfSyhlEhvajX218sw
+
+{
+    "task": "Learn Everything!"
+}
+### 
